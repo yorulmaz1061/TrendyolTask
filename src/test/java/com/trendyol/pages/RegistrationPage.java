@@ -14,22 +14,37 @@ public class RegistrationPage extends BasePage {
     @FindBy(xpath = "//p[.='Giriş Yap']")
     public WebElement GirisYap;
 
-    @FindBy(css = "#login-email")
+    @FindBy(xpath = "//input[@id='register-email']")
     public WebElement Eposta;
 
-    @FindBy(id = "#login-password-input")
+    @FindBy(xpath = "//input[@id='register-password-input']")
     public WebElement Sifre;
 
-    @FindBy(css = ".q-primary")
-    public WebElement GirisYapRegistration;
+    @FindBy(css = ".q-primary > span")
+    public WebElement UyeOliki;
 
     @FindBy(css = ".right.q-secondary")
-    public WebElement UyeOlButton;
+    public WebElement UyeOlButton1;
 
     @FindBy(css = "svg")
     public WebElement Cerez;
 
-   // @FindBy(xpath = "//body[@class='gender-popup-lock']\n")
+    @FindBy(xpath = "//label[.='Cinsiyet (Opsiyonel)']")
+    public WebElement Cinsiyet;
+
+    @FindBy(xpath = "//div[.='facebook']")
+    public WebElement Facebook;
+
+    @FindBy(xpath = "//div[.='google']")
+    public WebElement Google;
+
+    @FindBy(xpath = "//span[@class='message']")
+    public WebElement ValidationError;
+
+    //span[@class='message']
+
+
+
 
 
 

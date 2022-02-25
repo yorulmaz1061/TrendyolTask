@@ -9,24 +9,30 @@ public class RegistrationField {
 
     RegistrationPage registrationPage = new RegistrationPage();
 
-    @Given("the user clicks on Giris Yap button")
+    @When("the user clicks on Giris Yap button")
     public void the_user_clicks_on_Giris_Yap_button() {
         registrationPage.GirisYap.click();
 
     }
 
-    @When("the user clicks on Uye Ol button")
-    public void the_user_clicks_on_Uye_Ol_button() {
-       registrationPage.UyeOlButton.click();
+    @When("the user clicks on Uye Ol Tab ")
+    public void the_user_clicks_on_Uye_Ol_Tab() throws InterruptedException {
+
+        Thread.sleep(3000);
+        registrationPage.UyeOlButton.click();
     }
 
     @Then("the user should be able to display Eposta input box")
-    public void the_user_should_be_able_to_display_Eposta_input_box() {
+    public void the_user_should_be_able_to_display_Eposta_input_box() throws InterruptedException {
+        Thread.sleep(3000);
+
         registrationPage.Eposta.isDisplayed();
     }
 
     @Then("the user should be able to display Sifre input box")
-    public void the_user_should_be_able_to_display_Sifre_input_box() {
+    public void the_user_should_be_able_to_display_Sifre_input_box() throws InterruptedException {
+
+        Thread.sleep(3000);
         registrationPage.Sifre.isDisplayed();
 
 
@@ -38,4 +44,10 @@ public class RegistrationField {
     }
 
 
+    @Given("the user clicks on Cerez button")
+    public void theUserClicksOnCerezButton() {
+        registrationPage.Cerez.click();
+
+
+    }
 }

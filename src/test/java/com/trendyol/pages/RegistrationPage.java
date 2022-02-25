@@ -23,8 +23,14 @@ public class RegistrationPage extends BasePage {
     @FindBy(css = ".q-primary")
     public WebElement GirisYapRegistration;
 
-    @FindBy(css = ".right.q-secondary > span")
+    @FindBy(css = ".right.q-secondary")
     public WebElement UyeOlButton;
+
+    @FindBy(css = "svg")
+    public WebElement Cerez;
+
+   // @FindBy(xpath = "//body[@class='gender-popup-lock']\n")
+
 
 
 }
